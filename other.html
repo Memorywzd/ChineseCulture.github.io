@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>更多节日</title>
+	<link rel="stylesheet" href="./css/style2.css">
+	<link rel="icon" href="./images/toplogo.jpg" type="toplogo">
+</head>
+
+<body>
+	<!-- 导航栏 -->
+    <div class="top_box">
+        <div class="mix">
+		<div class="nav">
+			<input type="checkbox">
+			<span></span>
+			<span></span>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="springfestival.html">春节</a></li>
+				<li><a href="other.html">更多节日</a></li>
+				<li><a href="#">发扬传统</a></li>
+			</ul>
+		</div>
+		<div class="a">
+			<div>
+				<input type="text" class="b">
+				<a href="https://www.baidu.com" class="c">
+				<img src="images/sh.png" style="width: 30px;" alt="pl"></a>
+			</div>
+		</div>
+	</div>
+    </div>
+    
+    
+    <div class="down_box">
+        <div class="maindiv">
+		<div class="maindiv1">
+			<img class="qingming" src="images/qingming.jpg" alt="wrong">
+		</div>
+		<div class="maindiv2">
+			<h1>清明节</h1>
+			<p class="text">清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。扫墓祭祖与踏青郊游是清明节的两大礼俗主题，这两大传统礼俗主题在中国自古传承，至今不辍。
+			</p>
+		</div>
+	</div>
+
+	<div class="fbox">
+		<div class="toolbar">
+			<div class="toolbar1">
+				<img class="yuanxiao" src="images/yuanxiao.jpg" alt="wrong">
+			</div>
+			<p class="text1"> 元宵节，中国的传统节日之一，又称上元节、小正月、元夕或灯节，时间为每年农历正月十五。
+				正月是农历的元月，古人称“夜”为“宵”，正月十五是一年中第一个月圆之夜，所以称正月十五为“元宵节”。根据道教“三元”的说法，正月十五又称为“上元节”。元宵节习俗自古以来就以热烈喜庆的观灯习俗为主。
+				元宵节的形成有一个较长的过程，根源于民间开灯祈福古俗。据一般的资料与民俗传说，正月十五在西汉已经受到重视，不过正月十五元宵节真正作为全国民俗节日是在汉魏之后。正月十五燃灯习俗的兴起也与佛教东传有关，唐朝时佛教大兴，仕官百姓普遍在正月十五这一天“燃灯供佛”，佛家灯火于是遍布民间，从唐代起，元宵张灯即成为法定之事
+			</p>
+			<!-- <img src="tangyuan.jpg" alt=""> -->
+		</div>
+
+		<div class="content">
+			<img class="qixi" src="images/qixi.jpg" alt="">
+			<p class="text2">七夕节，又称七巧节、七姐节、女儿节、乞巧节、七娘会、七夕祭、牛公牛婆日、巧夕等，是中国民间的传统节日。七夕节由星宿崇拜衍化而来，为传统意义上的七姐诞，因拜祭“七姐”活动在七月七晩上举行，故名“七夕”。拜七姐，祈福许愿、乞求巧艺、坐看牵牛织女星、祈祷姻缘、储七夕水等，是七夕的传统习俗。经历史发展，七夕被赋予了“牛郎织女”的美丽爱情传说，使其成为了象征爱情的节日，从而被认为是中国最具浪漫色彩的传统节日，在当代更是产生了“中国情人节”的文化含义。
+			</p>
+
+		</div>
+	</div>
+    </div>
+</body>
+<script>
+    const text=document.querySelector('.text');
+    text.innerHTML=text.textContent.replace(/\S/g,"<span>$&</span>")
+
+    const letters = document.querySelectorAll("span");
+    for(let i=0;i<letters.length;i++){
+        letters[i].addEventListener('mouseover',function(){
+            letters[i].classList.add('active')
+		 
+        })
+    }
+</script>
+</html>
